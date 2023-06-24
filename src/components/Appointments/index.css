@@ -1,0 +1,139 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 60px 60px 40px 70px;
+  font-family: 'Roboto';
+  width: 90%;
+  margin: 50px;
+}
+
+.heading {
+  color: #171f46;
+  font-size: 29px;
+  margin: 0px;
+  margin-bottom: 35px;
+}
+
+.input-label {
+  color: #b5b7c4;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.appointment-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-button {
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  margin-top: 14px;
+  background-color: #8b5cf6;
+  padding: 6px 14px 6px 14px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.input {
+  width: 300px;
+  border-radius: 3px;
+  border-width: 1px;
+  padding: 9px 2px 8px 12px;
+  margin-bottom: 18px;
+  margin-top: 6px;
+}
+
+.hr-line {
+  background-color: lightgrey;
+  margin-top: 25px;
+  height: 2.5px;
+}
+
+.star-button {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #9897f0;
+  color: #9897f0;
+  font-family: 'Roboto';
+  font-weight: 500;
+  padding: 4px 14px 4px 14px;
+  margin-right: 10px;
+}
+
+.starred-button {
+  cursor: pointer;
+  background-color: #9897f0;
+  border-radius: 20px;
+  border: 1px solid #9897f0;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  padding: 4px 14px 4px 14px;
+  margin-right: 10px;
+}
+
+.appointments-container {
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.appointment-heading {
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.appointment-heading-and-button {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .appointments-image {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .appointments-image {
+    display: none;
+  }
+
+  .card-container {
+    padding: 65px 20px 0px 20px;
+  }
+
+  .appointments-container {
+    padding-left: 0px;
+  }
+
+  .appointment-heading {
+    padding-left: 0px;
+  }
+
+  .star-button {
+    margin-right: 0px;
+  }
+
+  .starred-button {
+    margin-right: 0px;
+  }
+}
